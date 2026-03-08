@@ -1,0 +1,159 @@
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(4px);
+  z-index: 1000;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  padding-top: 12vh;
+  animation: fadeIn 120ms ease;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+.palette {
+  width: 560px;
+  max-width: calc(100vw - 32px);
+  background: #1a2236;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 24px 64px rgba(0, 0, 0, 0.7), 0 0 0 1px rgba(255, 255, 255, 0.04);
+  overflow: hidden;
+  animation: slideDown 150ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideDown {
+  from { transform: scale(0.95) translateY(-8px); opacity: 0; }
+  to { transform: scale(1) translateY(0); opacity: 1; }
+}
+
+.inputRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e2535;
+}
+
+.searchIcon {
+  font-size: 18px;
+  color: #64748b;
+  flex-shrink: 0;
+  line-height: 1;
+}
+
+.input {
+  flex: 1;
+  background: transparent;
+  border: none;
+  outline: none;
+  font-size: 15px;
+  color: #f1f5f9;
+  caret-color: #6366f1;
+}
+
+.input::placeholder {
+  color: #475569;
+}
+
+.escBadge {
+  font-family: inherit;
+  font-size: 10px;
+  color: #475569;
+  background: #252d3d;
+  border: 1px solid #2d3748;
+  border-radius: 4px;
+  padding: 2px 6px;
+  flex-shrink: 0;
+}
+
+.list {
+  max-height: 400px;
+  overflow-y: auto;
+  padding: 4px 0;
+}
+
+.list::-webkit-scrollbar {
+  width: 4px;
+}
+.list::-webkit-scrollbar-track {
+  background: transparent;
+}
+.list::-webkit-scrollbar-thumb {
+  background: #2d3748;
+  border-radius: 4px;
+}
+
+.empty {
+  padding: 24px;
+  text-align: center;
+  color: #475569;
+  font-size: 13px;
+}
+
+.groupHeader {
+  padding: 8px 16px 4px;
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #475569;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 100%;
+  padding: 8px 16px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+  transition: background 80ms;
+  border-radius: 0;
+}
+
+.item:hover,
+.item.selected {
+  background: rgba(99, 102, 241, 0.12);
+}
+
+.icon {
+  font-size: 14px;
+  width: 20px;
+  text-align: center;
+  flex-shrink: 0;
+  color: #94a3b8;
+}
+
+.label {
+  flex: 1;
+  font-size: 13px;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.description {
+  font-size: 11px;
+  color: #475569;
+  flex-shrink: 0;
+}
+
+.shortcut {
+  font-family: inherit;
+  font-size: 10px;
+  color: #6366f1;
+  background: rgba(99, 102, 241, 0.12);
+  border: 1px solid rgba(99, 102, 241, 0.3);
+  border-radius: 4px;
+  padding: 1px 6px;
+  flex-shrink: 0;
+}

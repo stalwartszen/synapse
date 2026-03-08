@@ -1,0 +1,119 @@
+.wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background-color: var(--color-bg-primary);
+}
+
+.canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  cursor: default;
+  touch-action: none;
+}
+
+.canvas.modePan,
+.canvas.panning {
+  cursor: grab;
+}
+
+.canvas.panning {
+  cursor: grabbing;
+}
+
+.canvas.modeAddNode {
+  cursor: crosshair;
+}
+
+.canvas.modeAddEdge {
+  cursor: cell;
+}
+
+/* Overlay stats in corner */
+.stats {
+  position: absolute;
+  bottom: 12px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 6px 14px;
+  background: var(--color-bg-secondary);
+  border: 1px solid var(--color-border-default);
+  border-radius: var(--radius-full);
+  font-size: var(--text-xs);
+  color: var(--color-text-tertiary);
+  pointer-events: none;
+  user-select: none;
+}
+
+.statItem {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.statValue {
+  color: var(--color-text-secondary);
+  font-weight: 500;
+}
+
+/* Empty state */
+.emptyHint {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  user-select: none;
+}
+
+.emptyHint h3 {
+  font-size: var(--text-xl);
+  color: var(--color-text-tertiary);
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.emptyHint p {
+  font-size: var(--text-sm);
+  color: var(--color-text-disabled);
+}
+
+/* Loading overlay */
+.layoutOverlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(15, 17, 23, 0.5);
+  backdrop-filter: blur(2px);
+  z-index: 10;
+}
+
+.layoutSpinner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  color: var(--color-text-secondary);
+  font-size: var(--text-sm);
+}
+
+.spinner {
+  width: 32px;
+  height: 32px;
+  border: 3px solid var(--color-border-default);
+  border-top-color: var(--color-brand-primary);
+  border-radius: 50%;
+  animation: spin 0.7s linear infinite;
+}
+
+@keyframes spin {
+  to { transform: rotate(360deg); }
+}

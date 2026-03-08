@@ -1,0 +1,149 @@
+.button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  font-family: var(--font-sans, inherit);
+  font-weight: 500;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease,
+    box-shadow 150ms ease, opacity 150ms ease;
+  white-space: nowrap;
+  user-select: none;
+  text-decoration: none;
+  position: relative;
+  outline: none;
+}
+
+.button:focus-visible {
+  box-shadow: 0 0 0 2px #0f1117, 0 0 0 4px #6366f1;
+}
+
+/* ── Sizes ─────────────────────────────────── */
+
+.sm {
+  height: 28px;
+  padding: 0 10px;
+  font-size: 12px;
+  border-radius: 4px;
+}
+
+.md {
+  height: 34px;
+  padding: 0 14px;
+  font-size: 13px;
+}
+
+.lg {
+  height: 42px;
+  padding: 0 20px;
+  font-size: 15px;
+}
+
+.icon-only.sm {
+  width: 28px;
+  padding: 0;
+}
+.icon-only.md {
+  width: 34px;
+  padding: 0;
+}
+.icon-only.lg {
+  width: 42px;
+  padding: 0;
+}
+
+/* ── Variants ────────────────────────────── */
+
+.primary {
+  background-color: #6366f1;
+  color: #fff;
+  border-color: #6366f1;
+}
+.primary:hover:not(:disabled) {
+  background-color: #818cf8;
+  border-color: #818cf8;
+}
+.primary:active:not(:disabled) {
+  background-color: #4f46e5;
+  border-color: #4f46e5;
+}
+
+.secondary {
+  background-color: #1e2535;
+  color: #f1f5f9;
+  border-color: #2d3748;
+}
+.secondary:hover:not(:disabled) {
+  background-color: #252d3d;
+  border-color: #4a5568;
+}
+.secondary:active:not(:disabled) {
+  background-color: #161b27;
+}
+
+.ghost {
+  background-color: transparent;
+  color: #94a3b8;
+  border-color: transparent;
+}
+.ghost:hover:not(:disabled) {
+  background-color: #1e2535;
+  color: #f1f5f9;
+}
+.ghost:active:not(:disabled) {
+  background-color: #161b27;
+}
+
+.danger {
+  background-color: transparent;
+  color: #ef4444;
+  border-color: #ef4444;
+}
+.danger:hover:not(:disabled) {
+  background-color: rgba(239, 68, 68, 0.1);
+}
+.danger:active:not(:disabled) {
+  background-color: rgba(239, 68, 68, 0.2);
+}
+
+.outline {
+  background-color: transparent;
+  color: #6366f1;
+  border-color: #6366f1;
+}
+.outline:hover:not(:disabled) {
+  background-color: rgba(99, 102, 241, 0.1);
+}
+
+/* ── States ─────────────────────────────── */
+
+.button:disabled,
+.loading {
+  opacity: 0.5;
+  cursor: not-allowed;
+  pointer-events: none;
+}
+
+.loadingSpinner {
+  display: inline-block;
+  width: 14px;
+  height: 14px;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: spin 0.6s linear infinite;
+  flex-shrink: 0;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.fullWidth {
+  width: 100%;
+}

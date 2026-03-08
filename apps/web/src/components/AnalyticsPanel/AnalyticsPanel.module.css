@@ -1,0 +1,291 @@
+.panel {
+  position: absolute;
+  top: 48px;
+  right: 16px;
+  width: 300px;
+  background: #1a2236;
+  border: 1px solid #2d3748;
+  border-radius: 12px;
+  box-shadow: 0 16px 48px rgba(0, 0, 0, 0.6);
+  z-index: 100;
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 80px);
+  animation: slideIn 200ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes slideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e2535;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 13px;
+  font-weight: 600;
+  color: #f1f5f9;
+}
+
+.closeBtn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  cursor: pointer;
+  font-size: 14px;
+  padding: 2px 4px;
+  border-radius: 4px;
+  transition: color 0.15s;
+}
+.closeBtn:hover { color: #f1f5f9; }
+
+.content {
+  overflow-y: auto;
+  flex: 1;
+  padding-bottom: 8px;
+}
+.content::-webkit-scrollbar { width: 4px; }
+.content::-webkit-scrollbar-thumb { background: #2d3748; border-radius: 4px; }
+
+.section {
+  padding: 12px 16px;
+  border-bottom: 1px solid #1e2535;
+}
+.section:last-child { border-bottom: none; }
+
+.sectionTitle {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #64748b;
+  margin: 0 0 10px;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.badge {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 18px;
+  height: 16px;
+  padding: 0 4px;
+  background: #252d3d;
+  border-radius: 9999px;
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: normal;
+  letter-spacing: 0;
+  text-transform: none;
+}
+
+.statsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 8px;
+}
+
+.statCard {
+  background: #252d3d;
+  border-radius: 8px;
+  padding: 10px;
+  text-align: center;
+}
+
+.statValue {
+  font-size: 20px;
+  font-weight: 700;
+  color: #f1f5f9;
+  line-height: 1;
+  margin-bottom: 4px;
+}
+
+.statLabel {
+  font-size: 10px;
+  color: #64748b;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.barList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.barRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  cursor: pointer;
+  border-radius: 4px;
+  padding: 2px 0;
+}
+.barRow:hover .barLabel { color: #f1f5f9; }
+
+.barLabel {
+  width: 90px;
+  font-size: 11px;
+  color: #94a3b8;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  flex-shrink: 0;
+}
+
+.barTrack {
+  flex: 1;
+  height: 6px;
+  background: #252d3d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.bar {
+  height: 100%;
+  border-radius: 3px;
+  transition: width 0.4s ease;
+}
+
+.barValue {
+  font-size: 11px;
+  color: #64748b;
+  width: 20px;
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.empty {
+  font-size: 12px;
+  color: #475569;
+  margin: 0;
+}
+
+.good {
+  font-size: 12px;
+  color: #22c55e;
+  margin: 0;
+}
+
+.orphanList {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.orphanItem {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 5px 8px;
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  cursor: pointer;
+  text-align: left;
+  transition: background 0.12s, border-color 0.12s;
+  width: 100%;
+}
+.orphanItem:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: #2d3748;
+}
+
+.dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.orphanLabel {
+  flex: 1;
+  font-size: 12px;
+  color: #e2e8f0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.orphanType {
+  font-size: 10px;
+  color: #475569;
+}
+
+.clusterInfo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.clusterStat {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.clusterLabel {
+  font-size: 12px;
+  color: #64748b;
+}
+
+.clusterVal {
+  font-size: 12px;
+  font-weight: 600;
+  color: #e2e8f0;
+}
+
+.typeList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.typeRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.typeDot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.typeLabel {
+  width: 64px;
+  font-size: 11px;
+  color: #94a3b8;
+  flex-shrink: 0;
+}
+
+.typeBarTrack {
+  flex: 1;
+  height: 5px;
+  background: #252d3d;
+  border-radius: 3px;
+  overflow: hidden;
+}
+
+.typeBar {
+  height: 100%;
+  border-radius: 3px;
+}
+
+.typeCount {
+  font-size: 11px;
+  color: #64748b;
+  width: 20px;
+  text-align: right;
+}
