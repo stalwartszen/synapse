@@ -28,7 +28,7 @@ Please read this guide carefully before contributing. It will save you time and 
 
 Synapse is committed to providing a welcoming, inclusive, and harassment-free environment for everyone. By participating in this project, you agree to abide by our [Code of Conduct](CODE_OF_CONDUCT.md).
 
-Violations can be reported to **conduct@synapse-project.dev**. All reports will be handled confidentially.
+Violations can be reported to **stalwartszen@gmail.com**. All reports will be handled confidentially.
 
 ---
 
@@ -91,7 +91,7 @@ git clone https://github.com/YOUR_USERNAME/synapse.git
 cd synapse
 
 # Add the upstream remote
-git remote add upstream https://github.com/your-org/synapse.git
+git remote add upstream https://github.com/stalwartszen/synapse.git
 git remote -v  # Verify remotes
 ```
 
@@ -492,7 +492,7 @@ Update `README.md` if you add a major feature, change a configuration option, or
 
 ## Good First Issues
 
-New to Synapse? Look for issues labeled [`good first issue`](https://github.com/your-org/synapse/labels/good%20first%20issue). These are tasks that:
+New to Synapse? Look for issues labeled [`good first issue`](https://github.com/stalwartszen/synapse/labels/good%20first%20issue). These are tasks that:
 
 - Have a clear, well-defined scope
 - Do not require deep knowledge of the entire codebase
@@ -500,9 +500,9 @@ New to Synapse? Look for issues labeled [`good first issue`](https://github.com/
 
 Also check:
 
-- [`help wanted`](https://github.com/your-org/synapse/labels/help%20wanted) — Good second or third issues
-- [`documentation`](https://github.com/your-org/synapse/labels/documentation) — Great for getting familiar with the codebase
-- [`performance`](https://github.com/your-org/synapse/labels/performance) — If you love optimization
+- [`help wanted`](https://github.com/stalwartszen/synapse/labels/help%20wanted) — Good second or third issues
+- [`documentation`](https://github.com/stalwartszen/synapse/labels/documentation) — Great for getting familiar with the codebase
+- [`performance`](https://github.com/stalwartszen/synapse/labels/performance) — If you love optimization
 
 **Comment on the issue before starting work** to claim it and avoid duplicate effort. A maintainer will confirm assignment.
 
@@ -512,8 +512,8 @@ Also check:
 
 Stuck? We are here to help:
 
-- **GitHub Discussions** — Ask questions, share ideas: [Discussions](https://github.com/your-org/synapse/discussions)
-- **Discord** — Real-time chat with the community: [discord.gg/synapse](https://discord.gg/synapse)
+- **GitHub Discussions** — Ask questions, share ideas: [Discussions](https://github.com/stalwartszen/synapse/discussions)
+- **Email** — Reach Kushal directly: [stalwartszen@gmail.com](mailto:stalwartszen@gmail.com)
 - **Issue Comments** — Ask clarifying questions on the issue you are working on
 
 When asking for help, please provide:

@@ -22,7 +22,7 @@ Only the following versions receive security fixes. If you are using an unsuppor
 
 ### How to Report
 
-Send an email to **security@synapse-project.dev** with:
+Send an email to **stalwartszen@gmail.com** with:
 
 1. **Subject line**: `[SECURITY] Brief description of the vulnerability`
 2. **Vulnerability description**: A clear explanation of the issue, including which component is affected
@@ -41,7 +41,7 @@ Key ID: 0xABCD1234EF567890
 Fingerprint: ABCD 1234 EF56 7890 FEDC BA98 7654 3210 ABCD 1234
 ```
 
-You can find our full public key at [keys.openpgp.org](https://keys.openpgp.org) by searching for `security@synapse-project.dev`.
+You can find our full public key at [keys.openpgp.org](https://keys.openpgp.org) by searching for `stalwartszen@gmail.com`.
 
 ---
 
@@ -166,8 +166,8 @@ We thank the following researchers for responsibly disclosing vulnerabilities:
 
 ## Contact
 
-- **Security issues**: security@synapse-project.dev
-- **General inquiries**: hello@synapse-project.dev
+- **Security issues**: stalwartszen@gmail.com
+- **General inquiries**: stalwartszen@gmail.com
 - **PGP key**: Available at [keys.openpgp.org](https://keys.openpgp.org)
 
 Thank you for helping keep Synapse and its users safe.

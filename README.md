@@ -6,16 +6,16 @@
 
 **Real-time Collaborative Knowledge Graph & Mind-Mapping Platform**
 
-[![CI](https://github.com/your-org/synapse/actions/workflows/ci.yml/badge.svg)](https://github.com/your-org/synapse/actions/workflows/ci.yml)
-[![CodeQL](https://github.com/your-org/synapse/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/your-org/synapse/actions/workflows/codeql-analysis.yml)
+[![CI](https://github.com/stalwartszen/synapse/actions/workflows/ci.yml/badge.svg)](https://github.com/stalwartszen/synapse/actions/workflows/ci.yml)
+[![CodeQL](https://github.com/stalwartszen/synapse/actions/workflows/codeql-analysis.yml/badge.svg)](https://github.com/stalwartszen/synapse/actions/workflows/codeql-analysis.yml)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](CONTRIBUTING.md)
 [![npm version](https://img.shields.io/npm/v/@synapse/core)](https://www.npmjs.com/package/@synapse/core)
-[![Coverage](https://img.shields.io/codecov/c/github/your-org/synapse)](https://codecov.io/gh/your-org/synapse)
+[![Coverage](https://img.shields.io/codecov/c/github/stalwartszen/synapse)](https://codecov.io/gh/stalwartszen/synapse)
 [![TypeScript](https://img.shields.io/badge/TypeScript-5.3-blue)](https://www.typescriptlang.org/)
 [![Node.js Version](https://img.shields.io/badge/node-%3E%3D18.0.0-brightgreen)](https://nodejs.org)
 
-[Live Demo](https://synapse-demo.vercel.app) · [Documentation](https://synapse-docs.vercel.app) · [Report Bug](https://github.com/your-org/synapse/issues/new?template=bug_report.yml) · [Request Feature](https://github.com/your-org/synapse/issues/new?template=feature_request.yml)
+[Live Demo](https://synapse-demo.vercel.app) · [Documentation](https://synapse-docs.vercel.app) · [Report Bug](https://github.com/stalwartszen/synapse/issues/new?template=bug_report.yml) · [Request Feature](https://github.com/stalwartszen/synapse/issues/new?template=feature_request.yml)
 
 </div>
 
@@ -264,10 +264,9 @@ We welcome contributions of all kinds — from bug reports and documentation imp
 
 ## Community
 
-- **Discord**: [discord.gg/synapse](https://discord.gg/synapse) — Chat with contributors and users
-- **GitHub Discussions**: [Discussions](https://github.com/your-org/synapse/discussions) — RFCs, Q&A, show-and-tell
-- **Twitter/X**: [@SynapseGraph](https://twitter.com/SynapseGraph) — Announcements and updates
-- **Blog**: [synapse-blog.vercel.app](https://synapse-blog.vercel.app) — Deep dives and tutorials
+- **GitHub Discussions**: [Discussions](https://github.com/stalwartszen/synapse/discussions) — RFCs, Q&A, show-and-tell
+- **Issues**: [GitHub Issues](https://github.com/stalwartszen/synapse/issues) — Bug reports and feature requests
+- **Email**: [stalwartszen@gmail.com](mailto:stalwartszen@gmail.com) — Direct contact with the author
 
 ---
 
@@ -275,14 +274,16 @@ We welcome contributions of all kinds — from bug reports and documentation imp
 
 Synapse is open-source software licensed under the [MIT License](LICENSE).
 
-Copyright (c) 2026 The Synapse Contributors.
+Copyright (c) 2026 Kushal Bauskar ([@stalwartszen](https://github.com/stalwartszen)).
 
 ---
 
 <div align="center">
 
-Built with care by the open-source community.
+Built by [Kushal Bauskar](https://github.com/stalwartszen) and the open-source community.
 
-**[Star us on GitHub](https://github.com/your-org/synapse)** if Synapse helps you think better together.
+**[Star us on GitHub](https://github.com/stalwartszen/synapse)** if Synapse helps you think better together.
+
+Have questions or ideas? Reach out at [stalwartszen@gmail.com](mailto:stalwartszen@gmail.com)
 
 </div>
