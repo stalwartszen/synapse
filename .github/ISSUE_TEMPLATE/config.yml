@@ -1,0 +1,9 @@
+blank_issues_enabled: false
+
+contact_links:
+  - name: Security Vulnerability
+    url: mailto:stalwartszen@gmail.com
+    about: "Do NOT open a public issue for security vulnerabilities. Email us directly."
+  - name: GitHub Discussions
+    url: https://github.com/stalwartszen/synapse/discussions
+    about: "Questions, ideas, or anything that is not a bug or feature request."
